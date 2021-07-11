@@ -99,7 +99,7 @@ $(document).ready(function() {
             if (data.list[i].dt_txt.indexOf("15:00:00") !== -1) {
               // BOOTSTRAP CARDS
               var col = $("<div>").addClass("col-md-2");
-              var card = $("<div>").addClass("card bg-warning text-white");
+              var card = $("<div>").addClass("card bg-secondary text-white");
               var body = $("<div>").addClass("card-body p-2");
   
               var title = $("<h5>").addClass("card-title").text(new Date(data.list[i].dt_txt).toLocaleDateString());
