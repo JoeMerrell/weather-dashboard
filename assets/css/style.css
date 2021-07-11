@@ -1,0 +1,5 @@
+#grad1 {
+    /* height: 200px; */
+    background-image: linear-gradient( rgb(51, 159, 254), rgb(255, 255, 255));
+    background-repeat: no-repeat;
+  }
