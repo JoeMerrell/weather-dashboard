@@ -53,7 +53,7 @@ $(document).ready(function() {
 
           var cardFull = $("<div>").addClass("card-body");
 
-          // weather icon image
+          // weather icon
           var img =$("<img>").attr("src", "http://openweathermap.org/img/w/" + data.weather[0].icon + ".png");
   
           // MERGE ELEMENTS AND POST TO PAGE
@@ -131,16 +131,16 @@ $(document).ready(function() {
 
               // BOOTSTRAP CARDS
               var col = $("<div>").addClass("col-md-2");
-              var card = $("<div>").addClass("card bg-secondary text-white");
               var body = $("<div>").addClass("card-body p-2");
+              var card = $("<div>").addClass("text-white card bg-secondary");
   
               var title = $("<h5>").addClass("card-title").text(new Date(data.list[i].dt_txt).toLocaleDateString());
               
-              // weather icon image
-              var img = $("<img>").attr("src", "http://openweathermap.org/img/w/" + data.list[i].weather[0].icon + ".png");
-  
               var p1 = $("<p>").addClass("card-text").text("Temp: " + data.list[i].main.temp_max + " F");
               var p2 = $("<p>").addClass("card-text").text("Humidity: " + data.list[i].main.humidity + "%");
+
+              // weather icon image
+              var img = $("<img>").attr("src", "http://openweathermap.org/img/w/" + data.list[i].weather[0].icon + ".png");
   
               // MERGE & POST TO PAGE
               col.append(card.append(body.append(title, img, p1, p2)));
