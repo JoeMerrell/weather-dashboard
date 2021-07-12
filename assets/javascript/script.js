@@ -53,6 +53,7 @@ $(document).ready(function() {
 
           var cardFull = $("<div>").addClass("card-body");
 
+          // weather icon image
           var img =$("<img>").attr("src", "http://openweathermap.org/img/w/" + data.weather[0].icon + ".png");
   
           // MERGE ELEMENTS AND POST TO PAGE
@@ -134,7 +135,8 @@ $(document).ready(function() {
               var body = $("<div>").addClass("card-body p-2");
   
               var title = $("<h5>").addClass("card-title").text(new Date(data.list[i].dt_txt).toLocaleDateString());
-  
+              
+              // weather icon image
               var img = $("<img>").attr("src", "http://openweathermap.org/img/w/" + data.list[i].weather[0].icon + ".png");
   
               var p1 = $("<p>").addClass("card-text").text("Temp: " + data.list[i].main.temp_max + " F");
