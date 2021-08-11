@@ -8,8 +8,15 @@ $(document).ready(function() {
       $("#search-val").val("");
   
       weatherSearch(searchVal);
+
+      //console.log(searchVal);
+      //Next step: configure the search to include a state selector, setting values to ISO 3166-2:US (see https://en.wikipedia.org/wiki/ISO_3166-2:US)
+      //api.openweathermap.org/data/2.5/weather?q={city name},{state code}&appid={API key}
+
     });
   
+
+
     $(".history").on("click", "li", function() {
       weatherSearch($(this).text());
     });
