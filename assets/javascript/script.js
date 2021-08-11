@@ -54,7 +54,7 @@ $(document).ready(function() {
           var cardFull = $("<div>").addClass("card-body");
 
           // weather icon
-          var img =$("<img>").attr("src", "http://openweathermap.org/img/w/" + data.weather[0].icon + ".png");
+          var img =$("<img>").attr("src", "https://openweathermap.org/img/w/" + data.weather[0].icon + ".png");
   
           // MERGE ELEMENTS AND POST TO PAGE
           title.append(img);
