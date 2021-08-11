@@ -29,7 +29,7 @@ $(document).ready(function() {
         type: "GET",
 
         // api key cc75177dd9f0c2642683bbb98b276f16
-        url: "http://api.openweathermap.org/data/2.5/weather?q=" + searchVal + "&appid=cc75177dd9f0c2642683bbb98b276f16&units=imperial", 
+        url: "https://api.openweathermap.org/data/2.5/weather?q=" + searchVal + "&appid=cc75177dd9f0c2642683bbb98b276f16&units=imperial", 
         dataType: "json",
         success: function(data) {
 
@@ -140,7 +140,7 @@ $(document).ready(function() {
               var p2 = $("<p>").addClass("card-text").text("Humidity: " + data.list[i].main.humidity + "%");
 
               // weather icon image
-              var img = $("<img>").attr("src", "http://openweathermap.org/img/w/" + data.list[i].weather[0].icon + ".png");
+              var img = $("<img>").attr("src", "https://openweathermap.org/img/w/" + data.list[i].weather[0].icon + ".png");
   
               // MERGE & POST TO PAGE
               col.append(card.append(body.append(title, img, p1, p2)));
