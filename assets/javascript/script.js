@@ -79,7 +79,7 @@ $(document).ready(function() {
         type: "GET",
 
         // api key cc75177dd9f0c2642683bbb98b276f16
-        url: "http://api.openweathermap.org/data/2.5/uvi?appid=cc75177dd9f0c2642683bbb98b276f16&lat=" + lat + "&lon=" + lon,
+        url: "https://api.openweathermap.org/data/2.5/uvi?appid=cc75177dd9f0c2642683bbb98b276f16&lat=" + lat + "&lon=" + lon,
         dataType: "json",
         success: function(data) {
           var uv = $("<p>").text("UV Index: ");
@@ -116,7 +116,7 @@ $(document).ready(function() {
       $.ajax({
 
         type: "GET",
-        url: "http://api.openweathermap.org/data/2.5/forecast?q=" + searchVal + "&appid=cc75177dd9f0c2642683bbb98b276f16&units=imperial",
+        url: "https://api.openweathermap.org/data/2.5/forecast?q=" + searchVal + "&appid=cc75177dd9f0c2642683bbb98b276f16&units=imperial",
         dataType: "json",
         success: function(data) {
           
